@@ -5,7 +5,7 @@ metadata:
   labels:
     app: investutil-back
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: investutil-back
@@ -37,11 +37,11 @@ spec:
               key: jwt-secret
         resources:
           requests:
-            cpu: "100m"
-            memory: "128Mi"
+            cpu: "2000m"
+            memory: "4Gi"
           limits:
-            cpu: "500m"
-            memory: "512Mi"
+            cpu: "4000m"
+            memory: "8Gi"
         readinessProbe:
           httpGet:
             path: /health

@@ -3,6 +3,6 @@ kind: ConfigMap
 metadata:
   name: investutil-config
 data:
-  POSTGRES_DB: "investutil"
-  DB_HOST: "postgres-service"
-  DB_PORT: "5432" 
+  RUST_LOG: "info"
+  HOST: "0.0.0.0"
+  PORT: "8080" 
