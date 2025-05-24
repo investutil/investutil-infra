@@ -22,7 +22,7 @@ This repository contains all infrastructure and deployment configurations for th
 
 ## Docker Deployment
 
-### Using Docker Compose (Recommended)
+### Using Docker Compose
 
 1. Create a production environment file:
    ```bash
